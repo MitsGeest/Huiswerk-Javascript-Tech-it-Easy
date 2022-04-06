@@ -6,6 +6,7 @@
 
 
 // Opdracht 1a: Gebruik een array-methode om een array te maken met alle tv-type namen. Log de uitkomst in de console.
+//
 // ======= STAPPENPLAN =======
 // [X] 1.   Maak een variable waarin de nieuwe array opgeslagen kan worden
 // [] 2.   schrijf de array map methode uit, met een parameter (liefst naam enkelvoud van orginele array)
@@ -13,14 +14,16 @@
 // [X] 4.   Console log de functie
 // [X] 5.   Check in de console van de browser of het gelukt is.
 
-
 const tvType = inventory.map((banaan) => {
     return banaan.type;
     });
 console.log(tvType);
 
+
+
 // Opdracht 1b: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
 // Log de uitkomst in de console.
+//
 // ======= STAPPENPLAN =======
 // [X] 0.   Bepaal welke tv's uitverkocht zijn door de 'original stock' te vergelijken met 'sold' in de inventory array.
 //         Als de getallen gelijk zijn is het product uitverkocht.
@@ -39,8 +42,11 @@ const soldOut = inventory.filter((banaan) => {
 
 console.log(soldOut);
 
+
+
 // Opdracht 1c: Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 // Log de uitkomst in de console.
+//
 // ======= STAPPENPLAN =======
 // [X] 0.   Bepaal welke tv's over ambilight beschikken door te checken of ambilight = true waar is
 //
@@ -55,13 +61,17 @@ const ambilight = inventory.filter((banaan) => {
 
 console.log(ambilight);
 
+
+
 // Opdracht 1d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
 // Log de uitkomst in de console.
-
+//
+// ======= STAPPENPLAN =======
 // [X] 0.   Gebruik de array sort methode
 // [X] 1.   Zorg dat de sort methode op basis van de object property 'price' van laag naar hoog sorteert
 // [X] 2.   Console log
 // [X] 3.   Check in browser of het werkt.
 
 inventory.sort((a, b) => a.price - b.price);
+
 console.log(inventory);
